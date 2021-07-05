@@ -5,6 +5,13 @@ export default function Itemlist() {
 		<>
 			<Item />
 			<Item />
+			<Item />
+			<Item />
+			<Item />
+			<Item />
+			<Item />
+			<Item />
+			<Item />
 		</>
 	);
 }
