@@ -3,12 +3,12 @@ import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import Nav from "./Nav";
-import Item from "./Item";
+// import Item from "./Item";
 function App() {
 	return (
 		<>
 			<Nav />
-			<Item />
+			{/* <Item /> */}
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
