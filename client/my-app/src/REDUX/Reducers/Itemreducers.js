@@ -1,11 +1,11 @@
-import { Actiontypes } from "../constants/action-types";
+import { ActionTypes } from "../constants/action-types";
 
 export const itemReducer = (state, { type, payload }) => {
 	switch (type) {
-		case Actiontypes.Get_Items:
+		case ActionTypes.Get_Items:
 			return state;
 			break;
-		case Actiontypes.Select_Item:
+		case ActionTypes.Select_Item:
 			return state;
 			break;
 		default:
