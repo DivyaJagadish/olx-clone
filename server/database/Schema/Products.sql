@@ -1,9 +1,11 @@
-DROP TABLE IF EXISTS users CASCADE;
 
-CREATE TABLE users (
+DROP TABLE IF EXISTS products CASCADE;
+CREATE TABLE products (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255) NOT NULL,
-  email VARCHAR (255) NOT NULL,
-  intensity VARCHAR (255) NOT NULL,
-  completed_challenges_count INTEGER DEFAULT 0 
+  price INTEGER NOT NULL,
+  description VARCHAR (255) NOT NULL,
+  product_amount INTEGER  NOT NULL,
+  image VARCHAR(255) NOT NULL
+
 );
