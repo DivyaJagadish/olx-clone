@@ -1,5 +1,5 @@
 import { ActionTypes } from "../constants/action-types";
-
+const state = {};
 const itemReducer = (state, { type, payload }) => {
 	switch (type) {
 		case ActionTypes.Get_Items:
