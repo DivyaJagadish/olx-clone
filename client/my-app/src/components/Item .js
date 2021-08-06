@@ -23,14 +23,12 @@ export default function Item(props) {
 				<CardMedia
 					component="img"
 					alt="Contemplative Reptile"
-					height="140"
 					image={props.img}
 					title="Contemplative Reptile"
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						{props.title}
-						{props.Price}
+						{props.title} $ {props.Price}
 					</Typography>
 					<Typography variant="body2" color="textSecondary" component="p">
 						{props.description}
@@ -39,7 +37,7 @@ export default function Item(props) {
 			</CardActionArea>
 			<CardActions>
 				<Button size="small" color="primary">
-					Share
+					Buy
 				</Button>
 				<Button size="small" color="primary">
 					Learn More
