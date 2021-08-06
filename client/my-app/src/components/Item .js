@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 	},
 });
 
-export default function ImgMediaCard() {
+export default function Item(props) {
 	const classes = useStyles();
 
 	return (
@@ -24,16 +24,16 @@ export default function ImgMediaCard() {
 					component="img"
 					alt="Contemplative Reptile"
 					height="140"
-					image="/static/images/cards/contemplative-reptile.jpg"
+					image={props.img}
 					title="Contemplative Reptile"
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						Lizard
+						{props.title}
+						{props.Price}
 					</Typography>
 					<Typography variant="body2" color="textSecondary" component="p">
-						Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica
+						{props.description}
 					</Typography>
 				</CardContent>
 			</CardActionArea>
