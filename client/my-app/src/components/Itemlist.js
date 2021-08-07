@@ -8,8 +8,9 @@ export default function Itemlist() {
 	console.log(Items);
 	const myStyle = {
 		display: "Grid",
-		"grid-template-columns": "auto auto auto",
+		"grid-template-columns": "auto auto auto auto",
 		padding: "1rem",
+		"grid-row-gap": "0.5cm",
 	};
 
 	const List = Items.map((product, index) => (

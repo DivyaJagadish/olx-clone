@@ -13,13 +13,18 @@ const useStyles = makeStyles({
 	root: {
 		height: 400,
 		width: 350,
-		padding: "2rem",
-		backgroundColor: lightBlue,
+		paddingBottom: "1rem",
 	},
 	media: {
 		height: 200,
-		width: 200,
+		width: "80%",
 		objectFit: "scale-down",
+	},
+	Typography: {
+		fontSize: "15px",
+	},
+	Button: {
+		padding: "2rem",
 	},
 });
 
@@ -37,18 +42,16 @@ export default function Item(props) {
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						{props.title} $ {props.Price}
-					</Typography>
-					<Typography variant="body2" color="textSecondary" component="p">
-						{props.description}
+						{props.title}
+						<div>$ {props.Price}</div>
 					</Typography>
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
-				<Button size="small" color="primary">
+				<Button variant="contained" size="small" color="primary">
 					Add to Cart
 				</Button>
-				<Button size="small" color="primary">
+				<Button variant="contained" size="small" color="primary">
 					Learn More
 				</Button>
 			</CardActions>
