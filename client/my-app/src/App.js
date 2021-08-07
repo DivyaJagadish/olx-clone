@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./Nav";
 import Itemlist from "./components/Itemlist";
 import useApplicationData from "./helpers/useApplicationdata";
+import "./components/styles/itemlist.css";
 
 import ProductContext from "./Contexts/ProductContext";
 // import { Provider } from "react-redux";
