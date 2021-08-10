@@ -14,6 +14,7 @@ export default function Itemlist() {
 	const List = Items.map((product, index) => (
 		<Item
 			key={index}
+			index={index}
 			img={product.image}
 			title={product.title}
 			description={product.description}

@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 import { lightBlue } from "@material-ui/core/colors";
 import Itemdescription from "./Itemdescription";
 
@@ -31,6 +32,9 @@ const useStyles = makeStyles({
 
 export default function Item(props) {
 	const classes = useStyles();
+	console.log(props);
+
+	const id = props.index;
 
 	return (
 		<Card className={classes.root}>
@@ -52,9 +56,13 @@ export default function Item(props) {
 				<Button variant="contained" size="small" color="primary">
 					Add to Cart
 				</Button>
-				<Button variant="contained" size="small" color="primary">
-					Learn More
-				</Button>
+				{/* <Button variant="contained" size="small" color="primary">
+					Learn More */}
+
+				<Link to={`/details/${id}`}>
+					<Button onClick={() => {}}>Click me</Button>
+				</Link>
+				{/* </Button> */}
 			</CardActions>
 		</Card>
 	);
