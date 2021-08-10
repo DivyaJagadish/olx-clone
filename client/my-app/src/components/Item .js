@@ -56,13 +56,11 @@ export default function Item(props) {
 				<Button variant="contained" size="small" color="primary">
 					Add to Cart
 				</Button>
-				{/* <Button variant="contained" size="small" color="primary">
-					Learn More */}
-
 				<Link to={`/details/${id}`}>
-					<Button onClick={() => {}}>Click me</Button>
+					<Button variant="contained" size="small" color="primary">
+						Learn More
+					</Button>
 				</Link>
-				{/* </Button> */}
 			</CardActions>
 		</Card>
 	);
