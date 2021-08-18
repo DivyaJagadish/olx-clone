@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
@@ -35,8 +35,11 @@ export default function Nav() {
 						<MenuIcon />
 					</IconButton>
 					<Typography variant="h6" className={classes.title}>
-						Sell it
+						Estore
 					</Typography>
+					<Link to={"/mycart"}>
+						<Button color="inherit">MyCart</Button>
+					</Link>
 					<Button color="inherit">Login</Button>
 				</Toolbar>
 			</AppBar>

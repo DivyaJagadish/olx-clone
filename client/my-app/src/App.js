@@ -7,6 +7,7 @@ import "./components/styles/itemlist.css";
 import ItemDescriptionPage from "./pages/Itemdescriptionpage";
 import ProductContext from "./Contexts/ProductContext";
 import Homepage from "./pages/HomePage";
+import CartsPage from "./pages/CartsPage";
 // import { Provider } from "react-redux";
 // import store from "./REDUX/store";
 
@@ -22,6 +23,9 @@ function App() {
 						</Route>
 						<Route exact path="/details/:id">
 							<ItemDescriptionPage />
+						</Route>
+						<Route exact path="/mycart">
+							<CartsPage />
 						</Route>
 					</Switch>
 				</Router>
