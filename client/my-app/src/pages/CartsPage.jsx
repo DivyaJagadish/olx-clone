@@ -6,6 +6,9 @@ function CartsPage() {
 	return (
 		<>
 			<Nav />
+			My Cart 
+			
+
 		
 		</>
 	);
