@@ -8,6 +8,7 @@ export default function useApplicationData() {
 	useEffect(() => {
 		const Products = axios.get("https://fakestoreapi.com/products");
 		Products.then((result) => {
+			console.log(result);
 			setState((prev) => ({
 				...prev,
 				products: result.data,
