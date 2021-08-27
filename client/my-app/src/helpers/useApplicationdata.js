@@ -4,7 +4,7 @@ import axios from "axios";
 export default function useApplicationData() {
 	const [state, setState] = useState({
 		products: [],
-		cart :[],
+		cart: [],
 	});
 	useEffect(() => {
 		const Products = axios.get("https://fakestoreapi.com/products");
@@ -17,9 +17,6 @@ export default function useApplicationData() {
 		});
 	}, []);
 
-	addItemtoCart(){
-		
-	}
 	return {
 		state,
 	};
