@@ -8,11 +8,7 @@ function CartsPage() {
 			<Nav />
 			My Cart 
 
-<tr>
-	<th><tc>S.No</tc><tc>Item</tc><tc>Quantity</tc><tc>Price</tc>
-		</th>
-</tr>
-		
+
 		</>
 	);
 }
