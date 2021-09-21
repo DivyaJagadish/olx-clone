@@ -20,7 +20,7 @@ function CartsPage() {
       <td>1</td>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
+      <td></td>
     </tr>
     <tr>
       <td>2</td>
@@ -32,6 +32,12 @@ function CartsPage() {
       <td>3</td>
       <td colSpan="2">Larry the Bird</td>
       <td>@twitter</td>
+    </tr>
+
+  <tr>
+      <td>3</td>
+      <td colSpan="3">Total</td>
+      <td>Amount</td>
     </tr>
   </tbody>
 </Table>
